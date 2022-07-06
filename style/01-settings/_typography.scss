@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Inter:wght@400;500;600;700&family=Kantumruy+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 /* prettier-ignore */
 
 @font-face {
@@ -12,6 +13,7 @@
 
 :root {
   /* @link https://utopia.fyi/type/calculator?c=640,18,1.2,1440,24,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+  --font-step--3: clamp(0.63rem, calc(0.67rem + -0.04vw), 0.65rem);
   --font-step--2: clamp(0.78rem, calc(0.73rem + 0.13vw), 0.84rem);
   --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
   --font-step-0: clamp(1.13rem, calc(0.83rem + 0.75vw), 1.5rem);
@@ -19,7 +21,8 @@
   --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
   --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
   --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
-  --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+  --font-step-6: clamp(3.36rem, calc(-0.69rem + 10.11vw), 8.42rem);
+  --font-step-7: clamp(4.03rem, calc(-1.72rem + 14.37vw), 11.22rem);
 
   // TODO: implement a vertical rhythm
   --font-size-default: var(--font-step-0);
@@ -34,5 +37,8 @@
   --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console,
     monospace;
 
+  --font-family-Inter: Inter, var(--font-family-sans-serif);
+  --font-family-Epilogue: Epilogue, var(--font-family-sans-serif);
+  --font-family-KantumruyPro: Kantumruy Pro, var(--font-family-sans-serif);
   --font-family-oswald: oswald, var(--font-family-sans-serif);
 }
