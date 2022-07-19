@@ -21,8 +21,19 @@
   <div id="cursor">
     <div class="cursor__inner"></div>
   </div>
+  <a href="" class="say-hello">
+    <div class="say-hello__wrap">
+      <div class="say-hello__content">
+        <p><img src="./img/Hand-Light.png" alt="">Fale comigo agora</p>
+        <div class="say-hello-icon">
+          <img src="./img/arrow-btn-blue.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </a>
   <header class="container panel" data-color="black">
-    <a href="" class="logo"><img src="img/brand.svg" alt=""></a>
+    <!-- <a href="" class="logo"><img src="img/brand.svg" alt=""></a> -->
+    <a href="" class="logo" style="font-weight: 600; font-size: .8rem; font-family: 'Inter';">Eliezer Castro</a>
     <div class="header-right">
       <a href="" class="active">About</a>
       <a href="" class="">Case Studies</a>
@@ -34,12 +45,12 @@
   <div class="container hero panel" data-color="black">
 
     <div class="hero__left">
-      <img class="obj-02" src="img/vector-02.svg" alt="">
+      <!-- <img class="obj-02" src="img/vector-02.svg" alt=""> -->
       <!-- <a href="" class="hero__contact-tag">
         🤘 &nbsp contact@ecastro.me
       </a> -->
 
-      <a href="#about-me" class="person">
+      <!-- <a href="#about-me" class="person">
         <div class="photo">
 
         </div>
@@ -47,7 +58,7 @@
         <span>Sobre mim</span>
 
 
-      </a>
+      </a> -->
 
       <div class=" wrapper">
         <div class="line">
@@ -88,11 +99,11 @@
       </p>
       <div class="hero__left-row">
         <a href="#" class="btn">
-          Fale comigo <img src="img/arrow.svg" alt="">
+          Fale comigo <img class="button__outline__icon" src=" img/arrow.svg" alt="">
         </a>
 
-        <a href="#" class="btn" style="background-color: #0F0F0F;">
-          Meus trabalhos <img src="img/arrow.svg" alt="">
+        <a href="#" class="btn__outline--white">
+          Meus trabalhos <img class="button__outline__icon" src="img/arrow.svg" alt="">
         </a>
       </div>
       <p class="time">Tempo de resposta: dentro de 1-2 dias úteis.</p>
@@ -110,16 +121,21 @@
   <div class="services">
 
     <div class="container panel" data-color="black">
-      <h4>
-        Desenvolvedor e Designer, especializado <br> em UI/UX e Desenvolvimento Web
-      </h4>
+      <div class="header-container">
+        <h4 class="title-section">
+          Desenvolvedor e Designer, especializado <br> em UI/UX e Desenvolvimento Web
+        </h4>
+        <p class="desc-section">Como conectar pessoas, design, e tecnologia para o alcance de objetivos de negócios?</p>
+      </div>
+
+
       <div class="list-services">
         <div class="box">
           <div class="box-header">
             <img src="./img/laptop-02.svg" alt="">
-              <p class="title-box">
-                Aplicativos Web e Sites Corporativos
-              </p>
+            <p class="title-box">
+              Aplicativos Web e Sites Corporativos
+            </p>
           </div>
 
           <p class="description">
@@ -130,9 +146,9 @@
         <div class="box">
           <div class="box-header">
             <img src="./img/phone-01.svg" alt="">
-              <p class="title-box">
-                Mobile App Design
-              </p>
+            <p class="title-box">
+              Mobile App Design
+            </p>
           </div>
           <p class="description">
             Usando IOS, Android e uma visão especializada, levarei seu aplicativo para o próximo nível.
@@ -141,9 +157,9 @@
         <div class="box">
           <div class="box-header">
             <img src="./img/code-square-01.svg" alt="">
-              <p class="title-box">
-                Front End Development
-              </p>
+            <p class="title-box">
+              Front End Development
+            </p>
           </div>
           <p class="description">
             Eu vou ajudá-lo a preencher a lacuna entre design e desenvolvimento.
@@ -152,87 +168,141 @@
       </div>
     </div>
   </div>
-  <div class="container about-me panel" data-color="white" id="about-me" >
-    <div class="left">
-      <h4>Um poco mais<br>sobre mim</h4>
-      <!-- <p> Olá, Menu nome é Eliezer Castro, sou Designer e Desenvolvimento Web.
+  <section class="about-me">
+
+
+    <div class="container  panel" data-color="white" id="about-me">
+      <div class="left">
+        <h4>Um pouco mais<br>sobre mim</h4>
+        <!-- <p> Olá, Menu nome é Eliezer Castro, sou Designer e Desenvolvimento Web.
          Tenho formação em Desenvolvimentos de Sistemas e atualmente sou Pós-Graduando em Design de Produtos Digitais.</p> -->
 
-      <p>Atualmente trabalho no Brasil e também sou freelancer. Eu ajudo marcas
-        e os negócios a tornarem-se únicos. Eu sou apaixonado por
-        tudo o que tem a ver com Design Digital, gosto de explorar problemas e gosto ainda mais de solucioná-los através
-        de um belo design e uma boa experiência.</p>
-
-        <p>Atualmente trabalho no Brasil e também sou freelancer, ajudando marcas
+        <p>Atualmente trabalho no Brasil e também sou freelancer. Eu ajudo marcas
           e os negócios a tornarem-se únicos. Eu sou apaixonado por
-          tudo o que tem a ver com Design Digital, gosto de explorar problemas e gosto ainda mais de solucioná-los através
+          tudo o que tem a ver com Design Digital, gosto de explorar problemas e gosto ainda mais de solucioná-los
+          através
           de um belo design e uma boa experiência.</p>
 
-
-        <div class="c-sobre"><p>Meus conhecimentos</p></div>
+        <div class="c-sobre">
+          <p>Meus conhecimentos</p>
+        </div>
 
         <div class="marquee">
           <ul class="marquee-content">
-            <li><p>HTML</p></li>
-            <li><p>CSS</p></li>
-            <li><p>JavaScript</p></li>
-            <li><p>Sketch</p></li>
-            <li><p>Figma</p></li>
-            <li><p>Adobe XD</p></li>
-            <li><p>Axure</p></li>
-            <li><p>Quant-UX</p></li>
-            <li><p>Maze</p></li>
+            <li>
+              <p>HTML</p>
+            </li>
+            <li>
+              <p>CSS</p>
+            </li>
+            <li>
+              <p>SASS</p>
+            </li>
+            <li>
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <p>Sketch</p>
+            </li>
+            <li>
+              <p>Figma</p>
+            </li>
+            <li>
+              <p>Adobe XD</p>
+            </li>
+            <li>
+              <p>Axure</p>
+            </li>
+            <li>
+              <p>Quant-UX</p>
+            </li>
+            <li>
+              <p>Prototyping</p>
+            </li>
+            <li>
+              <p>Design Systems
+              </p>
+            </li>
+
           </ul>
         </div>
+      </div>
+      <div class="right">
 
 
-        <!-- <div class="tag">
-          <p>Sketch</p>
-        </div>
-        <div class="tag">
-          <p>Figma</p>
-        </div>
-        <div class="tag">
-          <p>Adobe XD</p>
-        </div>
-        <div class="tag">
-          <p>Maze</p>
-        </div>
-        <div class="tag">
-          <p>Quant-UX</p>
-        </div>
-      <div class="tag">
-        <p>HTML</p>
-      </div>
-      <div class="tag">
-        <p>CSS</p>
-      </div>
-      <div class="tag">
-        <p>Javascript</p>
-      </div>
-      
-      <div class="tag">
-        <p>Illustrator</p>
-      </div>
-      <div class="tag">
-        <p>Photoshop</p>
-      </div> -->
 
-    </div>
-    <div class="right">
-     
+      </div>
+
+
+
 
 
     </div>
+  </section>
+  <div class="container works">
+    <h4 class="title-section">Alguns cases que amei trabalhar</h4>
+    <p class="desc-section">Veja abaixo alguns dos projetos que realizei como UX designer, front-end, ou como consultor
+    </p>
+    <div class="wrapper-work">
+      <div class="left">
+        <div class="technology">
+          <p>UI/UX</p>
+          <p>Case study</p>
+          <p>Mobile</p>
 
+        </div>
+        <h4>
+          Doguinho
+        </h4>
 
+        <p>
+          Passear com cães pode ter várias vantagens para a saúde física e mental, mas nem todos os donos de cães
+          parecem se beneficiar.
+          A Doguinho é um aplicativo de smartphone projetado para que seu animal de estimação aproveite ao maxímo os
+          seus passeios.
+        </p>
 
+        <a href="" class="btn__outline--white">Saiba mais <img class="button__outline__icon"
+            src="img/arrow-btn-white.svg" alt=""></a>
+
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+    <div class="wrapper-work">
+      <div class="left">
+        <div class="technology">
+          <p>UI/UX</p>
+          <p>Mobile</p>
+          <p>Case study</p>
+
+        </div>
+        <h4>
+          App Quinote
+        </h4>
+
+        <p>
+          Quinote permite que você centralize suas task em um só lugar, seja Escrevendo, desenhando, registrando vídeos,
+          fotos e até mesmo áudios.
+        </p>
+
+        <a href="" class="btn__outline--white">Saiba mais <img class="button__outline__icon"
+            src="img/arrow-btn-white.svg" alt=""></a>
+
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
 
 
   </div>
 
   <div class="container process panel" data-color="white">
+
     <div class="wrapper">
+
       <aside class="left">
         <h6>Minha metodologia 🤯</h6>
         <h4>
@@ -242,8 +312,8 @@
 
         <p>
 
-          <a href="#" class="btn" style="max-width:180px ;">
-            Fale comigo <img src="img/arrow.svg" alt="">
+          <a href="#" class="btn__outline" style="max-width:180px ;">
+            Fale comigo <img class="button__outline__icon" src="img/arrow-balck.svg" alt="">
           </a>
       </aside>
       <div class="right">
@@ -313,17 +383,91 @@
       </div>
     </div>
   </div>
-  <div class="container l-works">
-    <h4>
-      I work with startups and top companies to design <br> inclusive, effective, and impactful digital products.
-    </h4>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi eum facere reiciendis ullam enim ratione,
-      fugiat officia doloremque, rerum iure deleniti libero ipsam aut earum explicabo incidunt corrupti reprehenderit.
+  <div class="contact">
+    <h4 class="title-section">Me mande uma mensagem</h4>
+    <p class="desc-section">Preencha o formulário e eu entrarei em contato com você em até 04 horas!
     </p>
+    <!-- <p class="desc-section">Aceito convites para trabalhos em Web Design, Mobile Design, UX, UI, cafés, churrascos e viagens.
+    </p> -->
+    <div class="container">
 
+      <div class="left">
+        <h5>Eliezer Castro</h5>
+        <p>Desenvolvedor e Designer</p>
+
+        <div class="details">
+          <p class="details-label">Local</p>
+          <p class="details-description">Tocantins, Brasil</p>
+        </div>
+        <div class="details">
+          <p class="details-label">Telefone</p>
+          <p class="details-description">+55 (63) 9 9231-9904</p>
+        </div>
+        <div class="details">
+          <p class="details-label">Email</p>
+          <p class="details-description">contact@ecastro.me</p>
+        </div>
+
+
+
+      </div>
+      <div class="right">
+
+        <!-- <h5>Vamos lá! Me mande uma mensagem <br> e veja como podemos trabahar juntos</h5>. -->
+
+        <form action="">
+          <div class="input-style">
+            <p class="label">Seu Nome</p>
+            <input type="text" name="" id="">
+          </div>
+          <div class="input-style">
+            <p class="label">Email</p>
+            <input type="text" name="">
+          </div>
+          <div class="input-style">
+            <p class="label">Telefone</p>
+            <input type="text" name="" id="">
+          </div>
+          <div class="input-style">
+            <p class="label">Empresa</p>
+            <input type="text" name="" id="">
+          </div>
+          <p>Qual tipo de projeto você busca?</p>
+          <div class="options">
+            <ul>
+              <li class="opt">
+                <input type="checkbox" class="check-with-label" id="site" />
+                <label class="label-for-check" for="site">Site</label>
+              </li>
+              <li class="opt">
+                <input type="checkbox" class="check-with-label" id="app" />
+                <label class="label-for-check" for="app">Aplicativo</label>
+              </li>
+              <li class="opt">
+                <input type="checkbox" class="check-with-label" id="sistema" />
+                <label class="label-for-check" for="sistema">Sistema</label>
+              </li>
+              <li class="opt">
+                <input type="checkbox" class="check-with-label" id="landing-page" />
+                <label class="label-for-check" for="landing-page">Landing Page</label>
+              </li>
+            </ul>
+            
+          </div>
+      
+          <button type="submit" class="btn__outline" style="max-width:180px ;">
+            Enviar mensagem <img class="button__outline__icon" src="img/arrow-balck.svg" alt="">
+          </button>
+          
+        </form>
+
+
+      </div>
+    </div>
   </div>
-  <footer class="l-contact">
+
+  <!-- <footer class="l-contact">
     <div class="container ">
       <div class="c-contact">
         <div class="c-contact-header">
@@ -358,7 +502,7 @@
           2022</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <script type="module" src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

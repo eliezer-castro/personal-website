@@ -26,14 +26,6 @@ function animateText() {
 
 window.onload = animateText
 
-// $(document).scroll(function () {
-//   var scroll = $(window).scrollTop() - 400
-//   var amount = -160 + scroll * 0.8
-//   if (amount < 10) {
-//     $('.about-me').css({ left: amount + 'px' })
-//   }
-// })
-
 const text_01 = document.querySelector('.text-01'),
   text_02 = document.querySelector('.text-02'),
   text_03 = document.querySelector('.text-03'),
@@ -123,93 +115,6 @@ cursorModifiers.forEach(curosrModifier => {
     cursor.classList.remove(attribute)
   })
 })
-
-// // Text Animation
-
-// // Variables
-// const el = document.querySelector('.title')
-
-// // Variables ~ Widths
-// let elWidth = el.offsetWidth
-// let windowWidth = window.innerWidth
-
-// // Variables ~ Mouse
-// let mouseX = 0
-// let prevMouseX = 0
-
-// // Target: value we want to animate to
-// let skewTarget = 0
-// let translateTarget = 0
-
-// // WithEasing: value we use to animate
-// let skewWithEasing = 0
-// let translateWithEasing = 0
-
-// // EasingFactor: determines how quick the animation/interpolation goes
-// let skewEasingFactor = 0.1
-// let translateEasingFactor = 0.05
-
-// // Events
-// window.addEventListener('mousemove', handleMouseMove)
-// window.addEventListener('resize', handleWindowResize)
-
-// // Functions
-// function handleMouseMove(e) {
-//   mouseX = e.pageX
-// }
-
-// function handleWindowResize(e) {
-//   elWidth = el.offsetWidth
-//   windowWidth = window.innerWidth
-// }
-
-// function lerp(start, end, factor) {
-//   return (1 - factor) * start + factor * end
-// }
-
-// function animateMe() {
-//   // Get difference between current and previous mouse position
-//   skewTarget = mouseX - prevMouseX
-//   prevMouseX = mouseX
-
-//   // Calc how much we need to translate our el
-//   translateTarget = ((elWidth - windowWidth) / windowWidth) * mouseX * -1
-
-//   // Ease between start and target values (skew)
-//   skewWithEasing = lerp(skewWithEasing, skewTarget, skewEasingFactor)
-
-//   // Limit our skew to a range of 75 degrees so it doesn't "over-skew"
-//   skewWithEasing = Math.min(Math.max(parseInt(skewWithEasing), -75), 75)
-
-//   // Ease between start and target values (translate)
-//   translateWithEasing = lerp(
-//     translateWithEasing,
-//     translateTarget,
-//     translateEasingFactor
-//   )
-
-//   el.style.transform = `
-//     translateX(${translateWithEasing}px)
-//     skewX(${skewWithEasing}deg)
-//   `
-
-//   // RAF
-//   window.requestAnimationFrame(animateMe)
-// }
-
-// window.requestAnimationFrame(animateMe)
-
-/* Color transition white */
-
-// window.addEventListener('scroll', changeBg)
-
-// function changeBg() {
-//   if (this.scrollY > this.innerHeight / .5) {
-//     document.body.classList.add('transiton')
-//   } else {
-//     document.body.classList.remove('transiton')
-//   }
-// }
 
 $(window)
   .scroll(function () {
